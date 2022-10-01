@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="formContainer">
+        <form class="signUpForm">
+            <div class="formElement">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error" id="emailError">Error message</span>
+            </div>
+            <div class="formElement">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error" id="countryError">Error message</span>
+            </div>
+            <div class="formElement">
+                <label for="postCode">Post Code / Zipcode</label>
+                <input type="text" name="postCode" id="postCode" required
+                    pattern="[A-Za-z]{2}[0-9]{2}[0-9][A-Za-z]{2}|[0-9]{5}">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error" id="postCodeError">Error message</span>
+            </div>
+            <div class="formElement">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error" id="passwordError">Error message</span>
+            </div>
+            <div class="formElement">
+                <label for="passwordConfirmation">Password Confirmation</label>
+                <input type="password" name="passwordConfirmation" id="passwordConfirmation" required maxlength="20">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error" id="passwordConfirmationError">Error message</span>
+            </div>
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

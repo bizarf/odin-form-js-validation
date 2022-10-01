@@ -1,0 +1,58 @@
+@import url(./modern-normalize.css);
+@import url(./fontawesome.min.css);
+@import url(./solid.min.css);
+@import url(./regular.min.css);
+
+div {
+    border: 1px solid;
+}
+
+.formContainer {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 5px;
+    display: block;
+    width: 100%;
+}
+
+.formElement {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#email:invalid {
+    border-color: red;
+    outline-color: red;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+i {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.fa-circle-check {
+    color: #22c55e;
+
+}
+
+.fa-circle-exclamation {
+    color: #dc2626;
+}
