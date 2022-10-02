@@ -15,25 +15,25 @@
         <form class="signUpForm">
             <div class="formElement">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <span class="error" id="emailError">Error message</span>
             </div>
             <div class="formElement">
                 <label for="country">Country</label>
-                <input type="text" name="country" id="country">
+                <input type="text" name="country" id="country" required>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <span class="error" id="countryError">Error message</span>
             </div>
             <div class="formElement">
-                <label for="postCode">Post Code / Zipcode</label>
-                <input type="text" name="postCode" id="postCode" required
+                <label for="areaCode">Post Code / Zipcode</label>
+                <input type="text" name="areaCode" id="areaCode" required
                     pattern="[A-Za-z]{2}[0-9]{2}[0-9][A-Za-z]{2}|[0-9]{5}">
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
-                <span class="error" id="postCodeError">Error message</span>
+                <span class="error" id="areaCodeError">Error message</span>
             </div>
             <div class="formElement">
                 <label for="password">Password</label>
@@ -43,7 +43,7 @@
                 <span class="error" id="passwordError">Error message</span>
             </div>
             <div class="formElement">
-                <label for="passwordConfirmation">Password Confirmation</label>
+                <label for="passwordConfirmation">Confirm Password</label>
                 <input type="password" name="passwordConfirmation" id="passwordConfirmation" required maxlength="20">
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>

@@ -32,14 +32,10 @@ input[type="password"] {
     position: relative;
 }
 
-#email:invalid {
-    border-color: red;
-    outline-color: red;
-}
-
 .error {
     color: #dc2626;
-    font-size: 14px;
+    font-size: 12px;
+    display: none;
 }
 
 i {
@@ -50,9 +46,10 @@ i {
 
 .fa-circle-check {
     color: #22c55e;
-
+    display: none;
 }
 
 .fa-circle-exclamation {
     color: #dc2626;
+    display: none;
 }
